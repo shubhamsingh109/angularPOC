@@ -4,3 +4,10 @@
   <span style="padding:5px">{{model.Description}}</span>
   <button routerLink="/update">Update</button>
 </div>
+
+<div class="form-group">
+  <label for="file">Choose File</label>
+  <input type="file"
+         id="file"
+         (change)="handleFileInput($event.target.files)">
+</div>
