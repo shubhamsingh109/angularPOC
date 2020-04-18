@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 import { Model } from './list.entity';
 import { DataService } from '../data.service';
 
@@ -9,7 +10,7 @@ import { DataService } from '../data.service';
 })
 export class ListComponent implements OnInit {
 
-  constructor(private service: DataService) { }
+  constructor(private service: DataService,private router : Router) { }
 
   public listData: Model[] = [];
   fileToUpload: File = null;

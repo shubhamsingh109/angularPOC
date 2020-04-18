@@ -8,5 +8,7 @@ import {TreeNode} from 'primeng/api';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  
+  onSubmit(value){
+    console.log(value);
+  }
 }
